@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio practice</title>
+    <link rel ="stylesheet" href ="style.css">
+    <!-- Font awesome cdn font  icon css-->
+    <link rel="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+<div class="hero-header">
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-a">
+                </i>
+                    <div class="logo-text">Noori</div>
+                    
+            </div>
+            <nav>
+                <div class="togglebtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="navlinks">
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">portfolio</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contanct me</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="hero-pic">
+                <img src="dp.jpg" alt="profile pic">
+            </div>
+            <div class="hero-text">
+                <h5>
+                    hii I'm  <span class ="">Frontend Developer</span>
+                </h5>
+                <h1>
+                Mahnoor Kibrea
+                </h1>
+                <p>" I am a passionate web developer specializing in FrontedDeveloper with 0 year of experience .I create responsive,
+                    user-friendly website for diverse clients .My experience lies in HTML,CSS and JAVASCRIPT .Whether collaborating with teams 
+                    or working independently .Explore my linkedin account to see example of my work "</p>
+                    <div class="btn-group"><a href="#" class="btn active">Download CV  </a>
+                        <a href="#" class="btn">Contanct</a>
+                    </div>
+                    <div class="socai">
+                        <!-- <a href="#"><i class="fa-brands fa-facebook"></i></a> -->
+                        <!-- <a href="#" class="fa-brands fa-linkedin"></a> -->
+                        <!-- <a href="#" class="fa-brands fa-instagram"></a> -->
+                        <!-- <a href="#" class="fa-brands fa-dribble"></a> -->
+                        <!-- <a href="#" class="fa-brands fa-pintrest"></a> -->
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+<script>
+    var togglebtn=document.querySelector(".togglebtn");
+    var nav=document.querySelector(".navlinks");
+    var links=document.querySelector(".navlinks li");
+
+    togglebtn.addEventListener("click",function(){
+        this.classList.toggle("click");
+        nav.classList.toggle("open")
+    })
+    var typed =new Typed(".input",{
+        String:["FrontedDeveloper","UX Designer","Web Developer"],
+        typedSpeed:70,
+        backSpeed:55,
+        loop:true,
+    })
+</script>
+</body>
+</html>
